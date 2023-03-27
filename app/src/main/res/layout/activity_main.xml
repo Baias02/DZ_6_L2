@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_fon"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/vhod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вход"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Dobro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добро пожаловать!"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/vypolnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выполните вход"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Dobro" />
+
+    <TextView
+        android:id="@+id/ili"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="или зарегистртруйтесь."
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vypolnit" />
+
+    <EditText
+        android:paddingStart="16dp"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginHorizontal="38dp"
+        android:backgroundTint="@color/white"
+        android:hint="User name"
+        android:background="@drawable/krug"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ili"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+
+        />
+
+    <EditText
+        android:paddingStart="16dp"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:hint="Password"
+        android:background="@drawable/krug"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+
+
+        />
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/voiti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        android:background="@drawable/krug"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/silver"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+
+        />
+
+    <TextView
+        android:id="@+id/zabyl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забыл пароль?"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voiti"
+        android:layout_marginStart="60dp"/>
+
+    <TextView
+        android:id="@+id/najmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нажми сюда."
+        android:textColor="@color/yellow"
+        app:layout_constraintStart_toEndOf="@+id/zabyl"
+        app:layout_constraintTop_toBottomOf="@+id/voiti"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
